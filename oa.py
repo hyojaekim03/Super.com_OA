@@ -18,7 +18,7 @@ df = df.drop(columns=["To_From"])
 # assumption made: Numbers are still allowed -> included numbers in regex expression
 df["Airline Code"] = df["Airline Code"].str.replace(r'[^A-Za-z0-9\s]','', regex=True).str.strip().str.replace(r'\s+', ' ', regex=True)
 
-#4 - write to local sqlite db
+# write to local sqlite db for testing
 conn = sqlite3.connect('flights.db')
 df.to_sql('flights', conn, if_exists='replace', index=False)
 
