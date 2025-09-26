@@ -1,1 +1,1 @@
-### Note to self: Submission approved by Super.com ✅
+### Submission approved by Super.com ✅
